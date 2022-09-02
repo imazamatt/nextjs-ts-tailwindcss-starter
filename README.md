@@ -24,6 +24,16 @@ yarn add --dev --exact prettier
 yarn add --dev prettier-plugin-tailwindcss
 ```
 
+### create .prettierrc file in root directory
+```bash
+{
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true
+}
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
