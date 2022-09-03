@@ -1,14 +1,16 @@
-import { Layout } from '@/components/Layout/Layout'
+import Head from 'next/head'
 
 function About() {
   return (
-    <Layout title={'About Page'}>
+    <>
+      <Head>
+        <title>About</title>
+      </Head>
+
       <section className={'about'}>
-        <div className={'container'}>
-          ABOUT
-        </div>
+        <div className={'container'}>ABOUT</div>
       </section>
-    </Layout>
+    </>
   )
 }
 

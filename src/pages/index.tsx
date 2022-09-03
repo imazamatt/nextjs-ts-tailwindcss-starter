@@ -1,17 +1,19 @@
 import type { NextPage } from 'next'
-import { Layout } from '@/components/Layout/Layout'
+import Head from 'next/head'
 
 const Home: NextPage = () => {
   return (
-    <Layout title={'Home Page'}>
+    <>
+      <Head>
+        <title>Home</title>
+      </Head>
+
       <section className={'home'}>
         <div className={'container'}>
-          <div className={'home__content'}>
-            HOME
-          </div>
+          <div className={'home__content'}>HOME</div>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }
 
