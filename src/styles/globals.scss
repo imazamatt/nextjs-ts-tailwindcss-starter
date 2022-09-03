@@ -1,0 +1,73 @@
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Basic styles
+@layer base {
+  html,
+  body,
+  #__next {
+    @apply h-[100%];
+  }
+
+  body {
+    @apply font-body text-[#232428];
+  }
+
+  a {
+    display: inline-block;
+  }
+
+  section {
+    @apply py-8 w-full;
+  }
+
+  .layout {
+    @apply flex flex-col min-h-[100%];
+  }
+
+  .main {
+    @apply flex flex-auto;
+  }
+}
+
+@layer components {
+  // Header styles
+  .header {
+    @apply shadow-md;
+
+    &__content {
+      @apply flex items-center justify-between py-4;
+    }
+  }
+
+  // Logo styles
+  .logo {
+    @apply mr-4;
+    &__link {
+      @apply flex;
+    }
+  }
+
+  // Navbar styles
+  .navbar {
+    &__list {
+      @apply hidden md:flex items-center;
+    }
+    &__item:not(:last-child) {
+      @apply mr-2;
+    }
+    &__link {
+      @apply p-2;
+    }
+  }
+
+  // Footer styles
+  .footer {
+    &__content {
+      @apply py-4;
+    }
+  }
+}

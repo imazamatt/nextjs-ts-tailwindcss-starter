@@ -1,13 +1,20 @@
 import { Header } from '@/components/Header/Header'
 import { Footer } from '@/components/Footer/Footer'
 import { Main } from '@/components/Main/Main'
+import Head from 'next/head'
 
-export const Layout = ({ children }: any) => {
+export const Layout = ({ children, title }: any) => {
   return (
-    <div className={'layout'}>
-      <Header />
-      <Main children={children} />
-      <Footer />
-    </div>
+    <>
+      <Head>
+        <title>{title}</title>
+      </Head>
+
+      <div className={'layout'}>
+        <Header />
+        <Main children={children} />
+        <Footer />
+      </div>
+    </>
   )
 }

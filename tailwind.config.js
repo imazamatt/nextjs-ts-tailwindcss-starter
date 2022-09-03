@@ -19,10 +19,10 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
-    // you can change any other pre build styles inside extend object
+    // you can change any other pre-build styles inside extend object
     extend: {
       fontFamily: {
-        body: ['"Poppins"', 'sans-serif']
+        body: ['"Roboto"', 'sans-serif']
       }
     },
     container: {
